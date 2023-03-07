@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60567CD3-03E8-4CCD-A60F-31DA8AF51644}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Article_Maker</RootNamespace>
+    <AssemblyName>Article_Maker</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\임태근\source\repos\ArticleMakerPostingFolder\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Article Maker</ProductName>
+    <PublisherName>임태근</PublisherName>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4A70E1FA335339A7201A2B64A71695FABD2C2826</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>library.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>A_M_YTK.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Article_Maker_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arrange_Article_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arrange_Article_2.Designer.cs">
+      <DependentUpon>Arrange_Article_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArticleMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArticleMaker.Designer.cs">
+      <DependentUpon>ArticleMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Article_Download.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Article_Download.Designer.cs">
+      <DependentUpon>Article_Download.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlankLearner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlankLearner.Designer.cs">
+      <DependentUpon>BlankLearner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blanklearner2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blanklearner2.Designer.cs">
+      <DependentUpon>blanklearner2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choose_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose_Form.Designer.cs">
+      <DependentUpon>Choose_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choose_Mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose_Mode.Designer.cs">
+      <DependentUpon>Choose_Mode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Except_Word_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Except_Word_Form.Designer.cs">
+      <DependentUpon>Except_Word_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Important_Word.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Important_Word.Designer.cs">
+      <DependentUpon>Important_Word.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loader.Designer.cs">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loader_First.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loader_First.Designer.cs">
+      <DependentUpon>Loader_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meditator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meditator.Designer.cs">
+      <DependentUpon>Meditator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessengerBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessengerBox.Designer.cs">
+      <DependentUpon>MessengerBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Option.Designer.cs">
+      <DependentUpon>Option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Papago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Papago.Designer.cs">
+      <DependentUpon>Papago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PremiumAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PremiumAD.Designer.cs">
+      <DependentUpon>PremiumAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Premium_Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Premium_Code.Designer.cs">
+      <DependentUpon>Premium_Code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Problem_ProducerWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Problem_ProducerWizard.Designer.cs">
+      <DependentUpon>Problem_ProducerWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Article_Arrange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Article_Arrange.Designer.cs">
+      <DependentUpon>Article_Arrange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteController.Designer.cs">
+      <DependentUpon>RemoteController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendToDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendToDev.Designer.cs">
+      <DependentUpon>SendToDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatementInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatementInsert.Designer.cs">
+      <DependentUpon>StatementInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_Kit.cs" />
+    <Compile Include="Total_Score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Total_Score.Designer.cs">
+      <DependentUpon>Total_Score.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Arrange_Article_2.resx">
+      <DependentUpon>Arrange_Article_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticleMaker.resx">
+      <DependentUpon>ArticleMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Article_Download.resx">
+      <DependentUpon>Article_Download.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlankLearner.resx">
+      <DependentUpon>BlankLearner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blanklearner2.resx">
+      <DependentUpon>blanklearner2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose_Form.resx">
+      <DependentUpon>Choose_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose_Mode.resx">
+      <DependentUpon>Choose_Mode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Except_Word_Form.resx">
+      <DependentUpon>Except_Word_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Important_Word.resx">
+      <DependentUpon>Important_Word.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loader.resx">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loader_First.resx">
+      <DependentUpon>Loader_First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meditator.resx">
+      <DependentUpon>Meditator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessengerBox.resx">
+      <DependentUpon>MessengerBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option.resx">
+      <DependentUpon>Option.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Papago.resx">
+      <DependentUpon>Papago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PremiumAD.resx">
+      <DependentUpon>PremiumAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Premium_Code.resx">
+      <DependentUpon>Premium_Code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Problem_ProducerWizard.resx">
+      <DependentUpon>Problem_ProducerWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Article_Arrange.resx">
+      <DependentUpon>Article_Arrange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteController.resx">
+      <DependentUpon>RemoteController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendToDev.resx">
+      <DependentUpon>SendToDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatementInsert.resx">
+      <DependentUpon>StatementInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Total_Score.resx">
+      <DependentUpon>Total_Score.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Article_Maker_TemporaryKey.pfx" />
+    <None Include="A_M_YTK.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="library.ico" />
+    <Content Include="writingICO.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
